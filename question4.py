@@ -83,7 +83,7 @@ class StudentList(object):
 
         while curr:
             if curr.getStudent().dorm == dorm:
-                tmp = curr.getStudent()
+                tmp = curr.replicate()
                 if not new_ll.head:
                     new_ll.head = tmp
                 else:
@@ -93,6 +93,8 @@ class StudentList(object):
             curr = curr.getNext()
 
         return new_ll
+
+
 
 
 if __name__ == '__main__':
