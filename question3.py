@@ -11,16 +11,35 @@ def condition_lower_than_75(temp):
 
 
 def nth_highest(alist, n):
-    pass
+    if n > len(alist):
+        return None
+    else:
+        alist.sort()
+        return alist[-n]
+
 
 def nth_lowest(alist, n):
-    pass
+    if n > len(alist):
+        return None
+    else:
+        alist.sort()
+        return alist[n - 1]
 
 def average_if(alist, condition):
-    pass
+    tmp = []
+    for temp in alist:
+        if condition(temp):
+            tmp.append(temp)
+
+    return sum(tmp) / len(tmp) if len(tmp) > 0 else 0
 
 def range_if(alist, condition):
-    pass
+    tmp = []
+    for temp in alist:
+        if condition(temp):
+            tmp.append(temp)
+    tmp.sort()
+    return max(tmp) - min(tmp) if len(tmp) > 0 else 0
 
 if __name__ == '__main__':
     N = 3
