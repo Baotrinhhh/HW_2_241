@@ -94,6 +94,12 @@ class StudentList(object):
 
         return new_ll
 
+    def printList(self):
+        current = self.head
+        while current is not None:
+            student = current.getStudent()
+            print(f"Name: {student.name}, ID: {student.student_id}, Height: {student.height}, Dorm: {student.dorm}")
+            current = current.getNext()
 
 
 
