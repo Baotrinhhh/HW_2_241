@@ -9,7 +9,7 @@ class StudentList(object):
         """
 
         :param filename:
-        :return:
+        :return: None
         """
         with open(filename, 'r') as file:
             prev = None
@@ -38,7 +38,7 @@ class StudentList(object):
     def averageHeight(self):
         """
 
-        :return:
+        :return: total_height / cnt (float
         """
         if not self.head:
             return - 1
@@ -58,7 +58,7 @@ class StudentList(object):
         """
 
         :param name:
-        :return:
+        :return: height (int)
         """
         curr = self.head
 
@@ -73,7 +73,7 @@ class StudentList(object):
         """
 
         :param dorm:
-        :return:
+        :return: new_ll (Linked List)
         """
         new_ll = StudentList()
         prev_new = None
