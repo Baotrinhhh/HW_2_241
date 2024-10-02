@@ -1,5 +1,3 @@
-from openpyxl.styles.builtins import total
-from twisted.python.util import nameToLabel
 
 from Student import StudentNode, Student
 
@@ -93,16 +91,6 @@ class StudentList(object):
             curr = curr.getNext()
 
         return new_ll
-
-# checking function
-    def printList(self):
-        current = self.head
-        while current is not None:
-            student = current.getStudent()
-            print(f"Name: {student.name}, ID: {student.student_id}, Height: {student.height}, Dorm: {student.dorm}")
-            current = current.getNext()
-
-
 
 if __name__ == '__main__':
     pass
