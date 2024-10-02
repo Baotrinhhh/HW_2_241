@@ -92,7 +92,7 @@ class StudentList(object):
                 prev_new = tmp
             curr = curr.getNext()
 
-
+        return new_ll
 
 
 if __name__ == '__main__':
